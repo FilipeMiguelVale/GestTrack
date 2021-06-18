@@ -1,0 +1,13 @@
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\bin\Debug\gestTrack.exe.config
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\bin\Debug\gestTrack.exe
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\bin\Debug\gestTrack.pdb
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\bin\Debug\gestTrack.xml
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.vbprojAssemblyReference.cache
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Resources.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.vbproj.GenerateResource.cache
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.vbproj.CoreCompileInputs.cache
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.exe
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.xml
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.pdb
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Initial.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.F_principal.resources
