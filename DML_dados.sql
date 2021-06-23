@@ -130,12 +130,12 @@ insert into GestTrack.Material (Nome,Categoria,valor, iva,Super_Codigo,Fatura_Nu
 	('Cabo dmx azul 2m',1,'3','0.69',1,1,1),
 	('Cabo dmx branco 3m',1,'5.9','1.36',1,1,1),
 	('Cabo dmx vermelho 10m',1,'6.9','1.59',1,1,1),
-	('Cabo microfone ',1,'100','23',Null,2,1),
-	('Behringer B115D ',2,'215','49.45',Null,3,1),
-	('Beam 7r primsa duplo ',3,'390','0',Null,4,1),
-	('Wash 36*18w RGBWA+UV ',3,'300','',Null,5,1),
+	('Cabo microfone ',1,'100','23',Null,2,2),
+	('Behringer B115D ',2,'215','49.45',Null,3,2),
+	('Beam 7r primsa duplo ',3,'390','0',Null,4,2),
+	('Wash 36*18w RGBWA+UV ',3,'300','',Null,5,2),
 	('Behringer B115D ',2,'215','49.45',Null,6,1),
-	('Cabo microfone 5m',1,'100','23',Null,7,1),
+	('Cabo microfone 5m',1,'100','23',Null,7,3),
 	('Microfone Sure Sm58',2,'200','46',Null,8,1)
 go
 select * from GestTrack.Material
