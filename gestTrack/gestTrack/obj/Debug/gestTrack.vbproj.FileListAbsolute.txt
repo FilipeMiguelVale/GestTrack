@@ -11,3 +11,11 @@ C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\o
 C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.pdb
 C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Initial.resources
 C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.F_principal.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Form1.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Armazem.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.clientes.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Eventos.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Faturas.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Funcionarios.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Orcamentos.resources
+C:\Users\fmmva\OneDrive\Documentos\UA\BD\Projeto\GestTrack\gestTrack\gestTrack\obj\Debug\gestTrack.Material_Armazem.resources

@@ -73,6 +73,50 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Armazem.Designer.vb">
+      <DependentUpon>Armazem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Armazem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atividade_obj.vb" />
+    <Compile Include="Cliente_obj.vb" />
+    <Compile Include="Material_Armazem.Designer.vb">
+      <DependentUpon>Material_Armazem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Material_Armazem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material_obj.vb" />
+    <Compile Include="Movimento_Obj.vb" />
+    <Compile Include="Orcamento_obj.vb" />
+    <Compile Include="Faturas_obj.vb" />
+    <Compile Include="Funcionario_obj.vb" />
+    <Compile Include="Armazem_obj.vb" />
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos.Designer.vb">
+      <DependentUpon>Eventos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faturas.Designer.vb">
+      <DependentUpon>Faturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios.Designer.vb">
+      <DependentUpon>Funcionarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="F_principal.Designer.vb">
       <DependentUpon>F_principal.vb</DependentUpon>
     </Compile>
@@ -91,6 +135,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
+    <Compile Include="My Project\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,19 +151,49 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Orcamentos.Designer.vb">
+      <DependentUpon>Orcamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orcamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Armazem.resx">
+      <DependentUpon>Armazem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos.resx">
+      <DependentUpon>Eventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faturas.resx">
+      <DependentUpon>Faturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionarios.resx">
+      <DependentUpon>Funcionarios.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_principal.resx">
       <DependentUpon>F_principal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Material_Armazem.resx">
+      <DependentUpon>Material_Armazem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orcamentos.resx">
+      <DependentUpon>Orcamentos.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

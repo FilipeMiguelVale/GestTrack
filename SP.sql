@@ -89,6 +89,18 @@ go
 exec GestTrack.WarehouseByEmployee 'Filipe'
 go
 
+create procedure GestTrack.EmployeeByWarehouse @codigo as varchar(256)as
+begin
+
+	Select fun.*
+	from GestTrack.Armazem as ARM join GestTrack.Funcionario_Usa as usa on arm.Codigo=usa.Codigo_Arm
+	join GestTrack.Funcionario as Func on Func.N_Interno=usa.Codigo_Func
+	where ARM.Codigo = @codigo
+end;
+go
+exec GestTrack.WarehouseByEmployee 'Filipe'
+go
+
 create procedure GestTrack.AllClients as
 begin
 	select * from GestTrack.Cliente
@@ -119,7 +131,7 @@ go
 
 create procedure GestTrack.AllActivities as
 begin
-	select * from GestTrack.Atividade
+	select * from GestTrack.Atividade 
 end;
 go
 
@@ -279,8 +291,7 @@ go
 
 create procedure GestTrack.billsByActivity @nome as varchar(256)as
 begin
-	Select Fact.Numero, fact.Nome, fact.Descricao, fact.data, fact.Codigo_Movimento
-	select * 
+	Select Fact.*
 	from GestTrack.Fatura as Fact join GestTrack.Movimento as Mov on Fact.Codigo_Movimento=Mov.Codigo join 
 	GestTrack.Atividade as ACT on Mov.Codigo_Atividade=ACT.Codigo
 		 where ACT.nome like '%'+@nome+'%'
@@ -359,7 +370,16 @@ begin
 end;
 go
 
-exec GestTrack.MaterialByWarehouse 'pavilhao1'
+create procedure GestTrack.MaterialByWarehouseCode @codigo as varchar(256) as
+begin
+
+	Select Mat.*
+	from GestTrack.Material as Mat join GestTrack.Armazem as ARM on Mat.Codigo_Armazem=ARM.Codigo
+		 where ARM.Codigo=@codigo
+end;
+go
+
+exec GestTrack.MaterialByWarehouseCode '1'
 go
 
 create procedure GestTrack.MaterialByBill @numero as int as
@@ -473,8 +493,6 @@ end;
 go
 exec GestTrack.budgetByMaterialName 'Cabo dmx azul 2m'
 go	
-
-
 
 create procedure GestTrack.materialByActivity @nome as varchar(256) as
 begin

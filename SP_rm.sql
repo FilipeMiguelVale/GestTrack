@@ -1,100 +1,100 @@
 use GestTrackDB
-go;
+go
 drop procedure GestTrack.AllEmployes 
-go;
+go
 drop procedure GestTrack.employeeByName
-go;
+go
 drop procedure GestTrack.employeeByNif
-go;
-drop procedure GestTrack.employesSupervisedByNif @nif 
-go;
-drop procedure GestTrack.employesSupervisedByName @nome 
+go
+drop procedure GestTrack.employesSupervisedByNif
+go
+drop procedure GestTrack.employesSupervisedByName
 go
 drop procedure GestTrack.AllWarehouse 
 go
-drop procedure GestTrack.WarehouseByName @nome
+drop procedure GestTrack.WarehouseByName 
 go
-drop procedure GestTrack.WarehouseByAddress @Morada  
+drop procedure GestTrack.WarehouseByAddress
 go
-drop procedure GestTrack.WarehouseByEmployee @nome 
+drop procedure GestTrack.WarehouseByEmployee
 go
 drop procedure GestTrack.AllClients
 go
-drop procedure GestTrack.clientByName @nome  
+drop procedure GestTrack.clientByName  
 go
-drop procedure GestTrack.ClientByNif @nif 
+drop procedure GestTrack.ClientByNif
 go
 drop procedure GestTrack.AllActivities
 go
-drop procedure GestTrack.activitiesByName @nome
+drop procedure GestTrack.activitiesByName
 go
-drop procedure GestTrack.activitiesByDescription @Descricao
+drop procedure GestTrack.activitiesByDescription
 go
-drop procedure GestTrack.activitiesByClient @nome 
+drop procedure GestTrack.activitiesByClient
 go
 drop procedure GestTrack.activitiesByClientNif 
 go
-drop procedure GestTrack.activitieByEmployee @nome
+drop procedure GestTrack.activitieByEmployee
 go	
 drop procedure GestTrack.AllMovements 
 go
-drop procedure GestTrack.movementByName @nome
+drop procedure GestTrack.movementByName
 go
-drop procedure GestTrack.movementByDescription @Descricao
+drop procedure GestTrack.movementByDescription
 go
-drop procedure GestTrack.movementByEmployee @nome 
+drop procedure GestTrack.movementByEmployee
 go	
-drop procedure GestTrack.movementByActivity @nome 
+drop procedure GestTrack.movementByActivity
 go	
 drop procedure GestTrack.AllBills
 go
-drop procedure GestTrack.billsByName @nome 
+drop procedure GestTrack.billsByName
 go
-drop procedure GestTrack.billsByDescription @Descricao
+drop procedure GestTrack.billsByDescription
 go
-drop procedure GestTrack.billByMovementCode @codigo
+drop procedure GestTrack.billByMovementCode
 go	
-drop procedure GestTrack.billByMovement @nome
+drop procedure GestTrack.billByMovement
 go	
-drop procedure GestTrack.billsByActivity @nome 
+drop procedure GestTrack.billsByActivity
 go	
 drop procedure GestTrack.AllMaterial 
 go
-drop procedure GestTrack.MaterialByName @nome
+drop procedure GestTrack.MaterialByName
 go
-drop procedure GestTrack.materialInsideMaterial @nome
+drop procedure GestTrack.materialInsideMaterial
 go
-drop procedure GestTrack.materialInsideMaterialCode @codigo
+drop procedure GestTrack.materialInsideMaterialCode
 go
-drop procedure GestTrack.materialByCategory @codigo 
+drop procedure GestTrack.materialByCategory
 go
-drop procedure GestTrack.materialByCategoryName @nome 
+drop procedure GestTrack.materialByCategoryName 
 go
-drop procedure GestTrack.MaterialByWarehouse @nome
+drop procedure GestTrack.MaterialByWarehouse
 go
-drop procedure GestTrack.MaterialByBill @numero
+drop procedure GestTrack.MaterialByBill
 go	
 drop procedure GestTrack.AllBudget 
 go
-drop procedure GestTrack.budgetByName @nome 
+drop procedure GestTrack.budgetByName 
 go
-drop procedure GestTrack.budgetByActivityName @nome 
+drop procedure GestTrack.budgetByActivityName 
 go
-drop procedure GestTrack.budgetByActivity @codigo 
+drop procedure GestTrack.budgetByActivity 
 go
-drop procedure GestTrack.budgetByClientName @nome
+drop procedure GestTrack.budgetByClientName 
 go
-drop procedure GestTrack.budgetByClient @nif 
+drop procedure GestTrack.budgetByClient  
 go
-drop procedure GestTrack.MaterialByBudgetName @nome
+drop procedure GestTrack.MaterialByBudgetName 
 go	
-drop procedure GestTrack.MaterialByBudget @codigo
+drop procedure GestTrack.MaterialByBudget 
 go
-drop procedure GestTrack.budgetByMaterial @codigo 
+drop procedure GestTrack.budgetByMaterial 
 go	
-drop procedure GestTrack.budgetByMaterialName @nome
+drop procedure GestTrack.budgetByMaterialName 
 go	
-drop procedure GestTrack.materialByActivity @nome 
+drop procedure GestTrack.materialByActivity 
 go
-drop procedure GestTrack.materialByActivityCode @codigo 
+drop procedure GestTrack.materialByActivityCode 
 go	
