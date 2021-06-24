@@ -67,6 +67,15 @@ go
 exec GestTrack.WarehouseByName 'Pavilhao'
 go
 
+create procedure GestTrack.WarehouseByCode @code as varchar(256) as
+begin
+	select * from GestTrack.Armazem where Codigo = @code
+end;
+go
+
+exec GestTrack.WarehouseByCode '1'
+go
+
 create procedure GestTrack.WarehouseByAddress @Morada as varchar(256) as
 begin
 	select * from GestTrack.Armazem where Morada like '%'+@Morada+'%'
@@ -92,13 +101,28 @@ go
 create procedure GestTrack.EmployeeByWarehouse @codigo as varchar(256)as
 begin
 
-	Select fun.*
+	Select Func.*
 	from GestTrack.Armazem as ARM join GestTrack.Funcionario_Usa as usa on arm.Codigo=usa.Codigo_Arm
 	join GestTrack.Funcionario as Func on Func.N_Interno=usa.Codigo_Func
 	where ARM.Codigo = @codigo
 end;
 go
-exec GestTrack.WarehouseByEmployee 'Filipe'
+exec GestTrack.EmployeeByWarehouse '1'
+go
+
+create procedure GestTrack.EmployeeNotInWarehouse @codigo as varchar(256)as
+begin
+	Select *
+	from GestTrack.Funcionario
+	except
+	Select Func.*
+	from GestTrack.Armazem as ARM join GestTrack.Funcionario_Usa as usa on arm.Codigo=usa.Codigo_Arm
+	join GestTrack.Funcionario as Func on Func.N_Interno=usa.Codigo_Func
+	
+	where ARM.Codigo = @codigo
+end;
+go
+exec GestTrack.EmployeeNotInWarehouse '2'
 go
 
 create procedure GestTrack.AllClients as
@@ -269,6 +293,8 @@ go
 exec GestTrack.billsByDescription 'Jazz'
 go
 
+
+
 create procedure GestTrack.billByMovementCode @codigo as int as
 begin
 	Select mov.Codigo, mov.Nome, mov.Descricao, mov.Data, mov.Codigo_Atividade, mov.Codigo_Funcionario
@@ -307,6 +333,16 @@ end;
 go
 
 exec GestTrack.AllMaterial
+go
+
+create procedure GestTrack.AllMaterialExceptMe @codigo as int as
+begin
+	select * from GestTrack.Material
+	where Codigo!= @codigo
+end;
+go
+
+exec GestTrack.AllMaterialExceptMe 1
 go
 
 create procedure GestTrack.MaterialByName @nome as varchar(256) as
@@ -379,7 +415,21 @@ begin
 end;
 go
 
-exec GestTrack.MaterialByWarehouseCode '1'
+exec GestTrack.MaterialByWarehouseCode '2'
+go
+
+
+
+create procedure GestTrack.MaterialNotInWarehouseCode @codigo as varchar(256) as
+begin
+
+	Select Mat.*
+	from GestTrack.Material as Mat 
+		 where mat.Codigo_Armazem!=@codigo or mat.Codigo_Armazem is Null
+end;
+go
+
+exec GestTrack.MaterialNotInWarehouseCode '1'
 go
 
 create procedure GestTrack.MaterialByBill @numero as int as

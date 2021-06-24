@@ -186,12 +186,17 @@ Public Class Funcionarios
         HideButtons()
         ListBox1.Enabled = False
     End Sub
-
+    Public Sub New(ByVal sql As SqlConnection)
+        InitializeComponent()
+        CN = sql
+        CMD = New SqlCommand
+        CMD.Connection = CN
+    End Sub
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         '' Change this line...
         ''CN = New SqlConnection("data source=127.0.0.1:888;integrated security=true;initial catalog=Northwind")
-        CN = New SqlConnection("Data Source = 127.0.0.1,888 ;Initial Catalog = GestTrackDB; uid = SA; password = sqlBD_2021")
+        ''CN = New SqlConnection("Data Source = 127.0.0.1,888 ;Initial Catalog = GestTrackDB; uid = SA; password = sqlBD_2021")
 
         CMD = New SqlCommand
         CMD.Connection = CN

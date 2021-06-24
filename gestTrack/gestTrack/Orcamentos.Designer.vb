@@ -53,45 +53,48 @@ Partial Class Orcamentos
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(-1, 1)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(69, 68)
+        Me.PictureBox1.Size = New System.Drawing.Size(92, 84)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
         'dropAtividade
         '
         Me.dropAtividade.FormattingEnabled = True
-        Me.dropAtividade.Location = New System.Drawing.Point(412, 301)
+        Me.dropAtividade.Location = New System.Drawing.Point(549, 370)
+        Me.dropAtividade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dropAtividade.Name = "dropAtividade"
-        Me.dropAtividade.Size = New System.Drawing.Size(248, 21)
+        Me.dropAtividade.Size = New System.Drawing.Size(329, 24)
         Me.dropAtividade.TabIndex = 166
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(676, 302)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(901, 372)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(213, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(283, 22)
         Me.DateTimePicker1.TabIndex = 165
         '
         'txtID
         '
         Me.txtID.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtID.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.txtID.Location = New System.Drawing.Point(414, 180)
-        Me.txtID.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtID.Location = New System.Drawing.Point(552, 222)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtID.Name = "txtID"
         Me.txtID.ReadOnly = True
-        Me.txtID.Size = New System.Drawing.Size(91, 22)
+        Me.txtID.Size = New System.Drawing.Size(120, 26)
         Me.txtID.TabIndex = 164
         '
         'Label11
         '
         Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label11.Location = New System.Drawing.Point(410, 153)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 1, 4, 4)
+        Me.Label11.Location = New System.Drawing.Point(547, 188)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(5, 1, 5, 5)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(96, 20)
+        Me.Label11.Size = New System.Drawing.Size(128, 25)
         Me.Label11.TabIndex = 163
         Me.Label11.Text = "ID"
         '
@@ -99,10 +102,10 @@ Partial Class Orcamentos
         '
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label4.Location = New System.Drawing.Point(410, 277)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 1)
+        Me.Label4.Location = New System.Drawing.Point(547, 341)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(115, 20)
+        Me.Label4.Size = New System.Drawing.Size(153, 25)
         Me.Label4.TabIndex = 162
         Me.Label4.Text = "Atividade"
         '
@@ -110,10 +113,10 @@ Partial Class Orcamentos
         '
         Me.bttnOK.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.bttnOK.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.bttnOK.Location = New System.Drawing.Point(676, 473)
-        Me.bttnOK.Margin = New System.Windows.Forms.Padding(4)
+        Me.bttnOK.Location = New System.Drawing.Point(901, 582)
+        Me.bttnOK.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.bttnOK.Name = "bttnOK"
-        Me.bttnOK.Size = New System.Drawing.Size(128, 39)
+        Me.bttnOK.Size = New System.Drawing.Size(171, 48)
         Me.bttnOK.TabIndex = 160
         Me.bttnOK.Text = "OK"
         Me.bttnOK.Visible = False
@@ -124,11 +127,11 @@ Partial Class Orcamentos
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListBox1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 14
-        Me.ListBox1.Location = New System.Drawing.Point(13, 144)
-        Me.ListBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ListBox1.ItemHeight = 18
+        Me.ListBox1.Location = New System.Drawing.Point(17, 177)
+        Me.ListBox1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(368, 368)
+        Me.ListBox1.Size = New System.Drawing.Size(489, 436)
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 159
         '
@@ -136,10 +139,10 @@ Partial Class Orcamentos
         '
         Me.bttnEdit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.bttnEdit.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.bttnEdit.Location = New System.Drawing.Point(575, 473)
-        Me.bttnEdit.Margin = New System.Windows.Forms.Padding(4)
+        Me.bttnEdit.Location = New System.Drawing.Point(767, 582)
+        Me.bttnEdit.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.bttnEdit.Name = "bttnEdit"
-        Me.bttnEdit.Size = New System.Drawing.Size(128, 39)
+        Me.bttnEdit.Size = New System.Drawing.Size(171, 48)
         Me.bttnEdit.TabIndex = 157
         Me.bttnEdit.Text = "Edit"
         '
@@ -147,10 +150,10 @@ Partial Class Orcamentos
         '
         Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label9.Location = New System.Drawing.Point(676, 277)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 1)
+        Me.Label9.Location = New System.Drawing.Point(901, 341)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(59, 20)
+        Me.Label9.Size = New System.Drawing.Size(79, 25)
         Me.Label9.TabIndex = 153
         Me.Label9.Text = "Data"
         '
@@ -158,10 +161,10 @@ Partial Class Orcamentos
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label5.Location = New System.Drawing.Point(755, 214)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 1)
+        Me.Label5.Location = New System.Drawing.Point(1007, 263)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(96, 20)
+        Me.Label5.Size = New System.Drawing.Size(128, 25)
         Me.Label5.TabIndex = 151
         Me.Label5.Text = "Validade"
         '
@@ -169,10 +172,10 @@ Partial Class Orcamentos
         '
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label3.Location = New System.Drawing.Point(588, 215)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 1)
+        Me.Label3.Location = New System.Drawing.Point(784, 265)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(96, 20)
+        Me.Label3.Size = New System.Drawing.Size(128, 25)
         Me.Label3.TabIndex = 149
         Me.Label3.Text = "Iva"
         '
@@ -180,10 +183,10 @@ Partial Class Orcamentos
         '
         Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label2.Location = New System.Drawing.Point(410, 215)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 1)
+        Me.Label2.Location = New System.Drawing.Point(547, 265)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(96, 20)
+        Me.Label2.Size = New System.Drawing.Size(128, 25)
         Me.Label2.TabIndex = 147
         Me.Label2.Text = "Valor"
         '
@@ -191,10 +194,10 @@ Partial Class Orcamentos
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label1.Location = New System.Drawing.Point(514, 153)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 1, 4, 4)
+        Me.Label1.Location = New System.Drawing.Point(685, 188)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 1, 5, 5)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 20)
+        Me.Label1.Size = New System.Drawing.Size(128, 25)
         Me.Label1.TabIndex = 145
         Me.Label1.Text = "Nome"
         '
@@ -202,10 +205,10 @@ Partial Class Orcamentos
         '
         Me.bttnCancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.bttnCancel.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.bttnCancel.Location = New System.Drawing.Point(466, 473)
-        Me.bttnCancel.Margin = New System.Windows.Forms.Padding(4)
+        Me.bttnCancel.Location = New System.Drawing.Point(621, 582)
+        Me.bttnCancel.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.bttnCancel.Name = "bttnCancel"
-        Me.bttnCancel.Size = New System.Drawing.Size(128, 39)
+        Me.bttnCancel.Size = New System.Drawing.Size(171, 48)
         Me.bttnCancel.TabIndex = 158
         Me.bttnCancel.Text = "Cancel"
         Me.bttnCancel.Visible = False
@@ -214,10 +217,10 @@ Partial Class Orcamentos
         '
         Me.bttnAdd.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.bttnAdd.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.bttnAdd.Location = New System.Drawing.Point(410, 473)
-        Me.bttnAdd.Margin = New System.Windows.Forms.Padding(4)
+        Me.bttnAdd.Location = New System.Drawing.Point(547, 582)
+        Me.bttnAdd.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.bttnAdd.Name = "bttnAdd"
-        Me.bttnAdd.Size = New System.Drawing.Size(128, 39)
+        Me.bttnAdd.Size = New System.Drawing.Size(171, 48)
         Me.bttnAdd.TabIndex = 156
         Me.bttnAdd.Text = "Add"
         '
@@ -225,71 +228,72 @@ Partial Class Orcamentos
         '
         Me.txtValidade.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtValidade.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.txtValidade.Location = New System.Drawing.Point(757, 237)
-        Me.txtValidade.Margin = New System.Windows.Forms.Padding(4, 1, 4, 4)
+        Me.txtValidade.Location = New System.Drawing.Point(1009, 292)
+        Me.txtValidade.Margin = New System.Windows.Forms.Padding(5, 1, 5, 5)
         Me.txtValidade.Name = "txtValidade"
         Me.txtValidade.ReadOnly = True
-        Me.txtValidade.Size = New System.Drawing.Size(113, 22)
+        Me.txtValidade.Size = New System.Drawing.Size(149, 26)
         Me.txtValidade.TabIndex = 152
         '
         'txtIva
         '
         Me.txtIva.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtIva.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.txtIva.Location = New System.Drawing.Point(591, 237)
-        Me.txtIva.Margin = New System.Windows.Forms.Padding(4, 1, 4, 4)
+        Me.txtIva.Location = New System.Drawing.Point(788, 292)
+        Me.txtIva.Margin = New System.Windows.Forms.Padding(5, 1, 5, 5)
         Me.txtIva.Name = "txtIva"
         Me.txtIva.ReadOnly = True
-        Me.txtIva.Size = New System.Drawing.Size(144, 22)
+        Me.txtIva.Size = New System.Drawing.Size(191, 26)
         Me.txtIva.TabIndex = 150
         '
         'txtValor
         '
         Me.txtValor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtValor.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.txtValor.Location = New System.Drawing.Point(412, 237)
-        Me.txtValor.Margin = New System.Windows.Forms.Padding(4, 1, 4, 4)
+        Me.txtValor.Location = New System.Drawing.Point(549, 292)
+        Me.txtValor.Margin = New System.Windows.Forms.Padding(5, 1, 5, 5)
         Me.txtValor.Name = "txtValor"
         Me.txtValor.ReadOnly = True
-        Me.txtValor.Size = New System.Drawing.Size(159, 22)
+        Me.txtValor.Size = New System.Drawing.Size(211, 26)
         Me.txtValor.TabIndex = 148
         '
         'txtNome
         '
         Me.txtNome.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtNome.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.txtNome.Location = New System.Drawing.Point(514, 180)
-        Me.txtNome.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNome.Location = New System.Drawing.Point(685, 222)
+        Me.txtNome.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtNome.Name = "txtNome"
         Me.txtNome.ReadOnly = True
-        Me.txtNome.Size = New System.Drawing.Size(356, 22)
+        Me.txtNome.Size = New System.Drawing.Size(473, 26)
         Me.txtNome.TabIndex = 146
         '
         'bttnDelete
         '
         Me.bttnDelete.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.bttnDelete.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.bttnDelete.Location = New System.Drawing.Point(732, 473)
-        Me.bttnDelete.Margin = New System.Windows.Forms.Padding(4)
+        Me.bttnDelete.Location = New System.Drawing.Point(976, 582)
+        Me.bttnDelete.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.bttnDelete.Name = "bttnDelete"
-        Me.bttnDelete.Size = New System.Drawing.Size(128, 39)
+        Me.bttnDelete.Size = New System.Drawing.Size(171, 48)
         Me.bttnDelete.TabIndex = 161
         Me.bttnDelete.Text = "Delete"
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(108, 10)
+        Me.PictureBox2.Location = New System.Drawing.Point(144, 12)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(137, 123)
+        Me.PictureBox2.Size = New System.Drawing.Size(183, 151)
         Me.PictureBox2.TabIndex = 144
         Me.PictureBox2.TabStop = False
         '
         'Orcamentos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(941, 525)
+        Me.ClientSize = New System.Drawing.Size(1255, 646)
         Me.Controls.Add(Me.dropAtividade)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.txtID)
@@ -312,6 +316,7 @@ Partial Class Orcamentos
         Me.Controls.Add(Me.bttnDelete)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Orcamentos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Orcamentos"

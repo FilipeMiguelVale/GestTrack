@@ -97,4 +97,12 @@ go
 drop procedure GestTrack.materialByActivity 
 go
 drop procedure GestTrack.materialByActivityCode 
+go
+drop procedure GestTrack.WarehouseByCode 
 go	
+drop procedure GestTrack.EmployeeNotInWarehouse 
+go	
+drop procedure GestTrack.AllMaterialExceptMe 
+go	
+drop procedure GestTrack.MaterialNotInWarehouseCode
+go

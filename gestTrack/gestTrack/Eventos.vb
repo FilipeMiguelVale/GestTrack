@@ -95,6 +95,11 @@ Public Class Eventos
             arm.Descricao = txtDescricao.Text
             arm.Data_Inicio = DateTimePickerInicio.Value
             arm.Data_Fim = DateTimePickerFim.Value
+            arm.Nome = txtNome.Text
+
+            arm.Cliente = CType(dropCliente.Items.Item(dropCliente.SelectedIndex), Cliente_obj).NifCliente
+
+
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -188,12 +193,17 @@ Public Class Eventos
         HideButtons()
         ListBox1.Enabled = False
     End Sub
-
+    Public Sub New(ByVal sql As SqlConnection)
+        InitializeComponent()
+        CN = sql
+        CMD = New SqlCommand
+        CMD.Connection = CN
+    End Sub
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         '' Change this line...
         ''CN = New SqlConnection("data source=127.0.0.1:888;integrated security=true;initial catalog=Northwind")
-        CN = New SqlConnection("Data Source = 127.0.0.1,888 ;Initial Catalog = GestTrackDB; uid = SA; password = sqlBD_2021")
+        ''CN = New SqlConnection("Data Source = 127.0.0.1,888 ;Initial Catalog = GestTrackDB; uid = SA; password = sqlBD_2021")
 
         CMD = New SqlCommand
         CMD.Connection = CN
@@ -308,7 +318,6 @@ Public Class Eventos
         CMD.Parameters.AddWithValue("@Descricao", C.Descricao)
         CMD.Parameters.AddWithValue("@DataI", C.Data_Inicio.ToString("yyyy-MM-dd"))
         CMD.Parameters.AddWithValue("@DataF", C.Data_Fim.ToString("yyyy-MM-dd"))
-
         If C.Cliente = -1 Then
             CMD.Parameters.AddWithValue("@Super", SqlInt32.Null)
         Else
@@ -328,12 +337,11 @@ Public Class Eventos
 
 
     Private Sub UpdateContact(ByVal C As Atividade_obj)
-        CMD.CommandText = "UPDATE GestTrack.Funcionario " &
+        CMD.CommandText = "UPDATE GestTrack.Atividade " &
             "SET Nome = @Nome, " &
             "    Descricao = @Descricao, " &
             "    Data_inicio = @DataI, " &
-            "    Data_Fim = @DataF, " &
-            "    cliente = @super, " &
+            "    Data_Fim = @DataF " &
             "WHERE Codigo = @Codigo"
         CMD.Parameters.Clear()
         CMD.Parameters.AddWithValue("@codigo", C.Codigo)

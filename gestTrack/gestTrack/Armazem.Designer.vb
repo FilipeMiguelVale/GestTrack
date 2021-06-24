@@ -51,6 +51,19 @@ Partial Class Armazem
         Me.Button4 = New System.Windows.Forms.Button()
         Me.LabelToAdd = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtIva = New System.Windows.Forms.TextBox()
+        Me.txtValor = New System.Windows.Forms.TextBox()
+        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -288,7 +301,7 @@ Partial Class Armazem
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.Location = New System.Drawing.Point(128, 468)
+        Me.Button1.Location = New System.Drawing.Point(137, 467)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(33, 23)
         Me.Button1.TabIndex = 136
@@ -299,7 +312,7 @@ Partial Class Armazem
         '
         Me.Button2.BackColor = System.Drawing.Color.Red
         Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.Location = New System.Drawing.Point(167, 468)
+        Me.Button2.Location = New System.Drawing.Point(176, 467)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(33, 23)
         Me.Button2.TabIndex = 137
@@ -318,7 +331,7 @@ Partial Class Armazem
         '
         Me.Button3.BackColor = System.Drawing.Color.Red
         Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.Location = New System.Drawing.Point(126, 313)
+        Me.Button3.Location = New System.Drawing.Point(176, 312)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(33, 23)
         Me.Button3.TabIndex = 140
@@ -329,7 +342,7 @@ Partial Class Armazem
         '
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.Location = New System.Drawing.Point(87, 313)
+        Me.Button4.Location = New System.Drawing.Point(137, 312)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(33, 23)
         Me.Button4.TabIndex = 139
@@ -356,16 +369,160 @@ Partial Class Armazem
         Me.PictureBox3.TabIndex = 142
         Me.PictureBox3.TabStop = False
         '
+        'Label7
+        '
+        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label7.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label7.Location = New System.Drawing.Point(946, 280)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(128, 25)
+        Me.Label7.TabIndex = 157
+        Me.Label7.Text = "Categoria"
+        '
+        'Label8
+        '
+        Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label8.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label8.Location = New System.Drawing.Point(723, 282)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(128, 25)
+        Me.Label8.TabIndex = 155
+        Me.Label8.Text = "Iva"
+        '
+        'Label9
+        '
+        Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label9.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label9.Location = New System.Drawing.Point(486, 282)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(128, 25)
+        Me.Label9.TabIndex = 153
+        Me.Label9.Text = "Valor"
+        '
+        'txtIva
+        '
+        Me.txtIva.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtIva.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.txtIva.Location = New System.Drawing.Point(727, 309)
+        Me.txtIva.Margin = New System.Windows.Forms.Padding(5, 1, 5, 5)
+        Me.txtIva.Name = "txtIva"
+        Me.txtIva.ReadOnly = True
+        Me.txtIva.Size = New System.Drawing.Size(191, 26)
+        Me.txtIva.TabIndex = 156
+        '
+        'txtValor
+        '
+        Me.txtValor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtValor.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.txtValor.Location = New System.Drawing.Point(488, 309)
+        Me.txtValor.Margin = New System.Windows.Forms.Padding(5, 1, 5, 5)
+        Me.txtValor.Name = "txtValor"
+        Me.txtValor.ReadOnly = True
+        Me.txtValor.Size = New System.Drawing.Size(211, 26)
+        Me.txtValor.TabIndex = 154
+        '
+        'ListBox3
+        '
+        Me.ListBox3.FormattingEnabled = True
+        Me.ListBox3.ItemHeight = 16
+        Me.ListBox3.Location = New System.Drawing.Point(18, 192)
+        Me.ListBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.ListBox3.Name = "ListBox3"
+        Me.ListBox3.Size = New System.Drawing.Size(369, 404)
+        Me.ListBox3.TabIndex = 159
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Cabos", "Som", "Luzes", "Caixas"})
+        Me.ComboBox1.Location = New System.Drawing.Point(953, 309)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(145, 24)
+        Me.ComboBox1.TabIndex = 160
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Cabos", "Som", "Luzes", "Caixas"})
+        Me.ComboBox2.Location = New System.Drawing.Point(492, 366)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(261, 24)
+        Me.ComboBox2.TabIndex = 162
+        '
+        'Label10
+        '
+        Me.Label10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label10.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label10.Location = New System.Drawing.Point(485, 337)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(160, 25)
+        Me.Label10.TabIndex = 161
+        Me.Label10.Text = "Material Super"
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Cabos", "Som", "Luzes", "Caixas"})
+        Me.ComboBox3.Location = New System.Drawing.Point(492, 423)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(261, 24)
+        Me.ComboBox3.TabIndex = 164
+        '
+        'Label12
+        '
+        Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label12.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label12.Location = New System.Drawing.Point(485, 394)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(174, 25)
+        Me.Label12.TabIndex = 163
+        Me.Label12.Text = "Armazem"
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"Cabos", "Som", "Luzes", "Caixas"})
+        Me.ComboBox4.Location = New System.Drawing.Point(492, 484)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(261, 24)
+        Me.ComboBox4.TabIndex = 166
+        '
+        'Label13
+        '
+        Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label13.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label13.Location = New System.Drawing.Point(485, 455)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(5, 5, 5, 1)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(128, 25)
+        Me.Label13.TabIndex = 165
+        Me.Label13.Text = "Fatura"
+        '
         'Armazem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1255, 646)
+        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.txtIva)
+        Me.Controls.Add(Me.txtValor)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.LabelToAdd)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.ComboBoxFuncionarios)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label6)
@@ -389,6 +546,9 @@ Partial Class Armazem
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.LabelToAdd)
+        Me.Controls.Add(Me.ComboBoxFuncionarios)
+        Me.Controls.Add(Me.ListBox3)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Armazem"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -429,4 +589,17 @@ Partial Class Armazem
     Friend WithEvents Button4 As Button
     Friend WithEvents LabelToAdd As Label
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents txtIva As TextBox
+    Friend WithEvents txtValor As TextBox
+    Friend WithEvents ListBox3 As ListBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Label13 As Label
 End Class

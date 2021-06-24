@@ -5,7 +5,7 @@ insert into GestTrack.Funcionario (Nome,Email,Nif,Morada,DNasc,Telemovel,Super_I
 	('Filipe Miguel Marques Vale','filipevale@ua.pt','10000001','Seia','1997-11-18','912345678',Null),
 	('Antonio JC Fragoso','muv@sapo.pt','10000002','Seia','1997-11-19','912345679',1),
 	('Nuno Manuel Rodrigues','geral@jndprodm.com','10000003','Oliveira de Frades','1997-11-20','912345680',1),
-	('Pedro Simões','filipevale@ua.pt','10000004','Viseu','1997-11-21','912345681',1)
+	('Pedro Simï¿½es','filipevale@ua.pt','10000004','Viseu','1997-11-21','912345681',1)
 go
 select * from GestTrack.Funcionario
 /*delete from GestTrack.Funcionario*/
@@ -54,10 +54,10 @@ insert into GestTrack.Atividade (Nome,Descricao,Data_Inicio,Data_Fim,Cliente)val
 	('Jazz and blues Seia XIV ','edicao XIV ','2018-3-8','2018-3-10','20000001'),
 	('Jazz and blues Seia XV ','edicao XV ','2019-3-21','2019-3-24','20000001'),
 	('Jazz and blues Seia XVI ','edicao XVI open AIR','2021-7-2','2021-7-4','20000001'),
-	('Atuação GPS Pindelo ','Pindelo ','2019-4-21','2019-4-21','20000006'),
-	('Atuação GPS Manhouce','Manhouce','2019-5-18','2019-5-19','20000006'),
-	('Atuação GPS Pindelo','Pindelo ','2019-6-8','2019-6-9','20000006'),
-	('Atuação GPS Fiais','Fiais ','2019-6-22','2019-6-22','20000006'),
+	('Atuaï¿½ï¿½o GPS Pindelo ','Pindelo ','2019-4-21','2019-4-21','20000006'),
+	('Atuaï¿½ï¿½o GPS Manhouce','Manhouce','2019-5-18','2019-5-19','20000006'),
+	('Atuaï¿½ï¿½o GPS Pindelo','Pindelo ','2019-6-8','2019-6-9','20000006'),
+	('Atuaï¿½ï¿½o GPS Fiais','Fiais ','2019-6-22','2019-6-22','20000006'),
 	('Festival Internacional 2018','Seia','2018-6-22','2018-6-22','20000003'),
 	('Festival Internacional 2019','Seia','2019-6-2','2019-6-2','20000003'),
 	('Festival VMP','Seia','2019-7-2','2019-7-2','20000004'),
@@ -141,16 +141,16 @@ go
 select * from GestTrack.Material
 
 insert into GestTrack.Orcamento (Nome,Validade,valor,iva,Data_Realizado,Atividade_Codigo)values
-	('Orçamento Jazz and blues Seia XII ',30,'1000','230','2016-3-10',1),
-	('Orçamento Jazz and blues Seia XIII ',30,'500','115','2017-3-9',2),
-	('Orçamento Jazz and blues Seia XIV ',30,'1500','345','2018-3-8',3),
-	('Orçamento Jazz and blues Seia XV ',30,'1000','230','2019-3-21',4),
-	('Orçamento Jazz and blues Seia XVI ',30,'3000','690','2021-7-2',5),
-	('Orçamento Festival Internacional 2018',30,'500','115','2018-6-22',10),
-	('Orçamento Festival Internacional 2019',30,'1000','230','2019-6-2',11),
-	('Orçamento Festival VMP',30,'1000','230','2019-7-2',12),
-	('Orçamento Som Festival VMP',30,'1000','230','2020-6-15',13),
-	('Orçamento Som + Luzes Festival VMP',30,'2000','460','2020-6-15',13)
+	('Orï¿½amento Jazz and blues Seia XII ',30,'1000','230','2016-3-10',1),
+	('Orï¿½amento Jazz and blues Seia XIII ',30,'500','115','2017-3-9',2),
+	('Orï¿½amento Jazz and blues Seia XIV ',30,'1500','345','2018-3-8',3),
+	('Orï¿½amento Jazz and blues Seia XV ',30,'1000','230','2019-3-21',4),
+	('Orï¿½amento Jazz and blues Seia XVI ',30,'3000','690','2021-7-2',5),
+	('Orï¿½amento Festival Internacional 2018',30,'500','115','2018-6-22',10),
+	('Orï¿½amento Festival Internacional 2019',30,'1000','230','2019-6-2',11),
+	('Orï¿½amento Festival VMP',30,'1000','230','2019-7-2',12),
+	('Orï¿½amento Som Festival VMP',30,'1000','230','2020-6-15',13),
+	('Orï¿½amento Som + Luzes Festival VMP',30,'2000','460','2020-6-15',13)
 
 go
 select * from GestTrack.Orcamento

@@ -98,7 +98,7 @@ Public Class Faturas
             If dropMovimento.SelectedIndex = -1 Then
                 arm.Movimento = -1
             Else
-                arm.Movimento = CType(ListBox1.Items.Item(dropMovimento.SelectedIndex), Movimento_obj).Atividade
+                arm.Movimento = CType(dropMovimento.Items.Item(dropMovimento.SelectedIndex), Movimento_obj).Atividade
             End If
 
 
@@ -177,8 +177,23 @@ Public Class Faturas
                 dropMovimento.SelectedIndex = supIndex
             End If
             supIndex += 1
-
         Next
+
+        CMD.CommandText = "select GestTrack.calcBillValue(" + arm.Codigo.ToString + ")"
+        CN.Open()
+        Dim RDR As SqlDataReader
+        RDR = CMD.ExecuteReader
+        While RDR.Read
+            txtValor.Text = RDR.Item("").ToString() + "€"
+        End While
+        CN.Close()
+        CMD.CommandText = "select GestTrack.calcIvaValue(" + arm.Codigo.ToString + ")"
+        CN.Open()
+        RDR = CMD.ExecuteReader
+        While RDR.Read
+            txtIva.Text = RDR.Item("").ToString() + "€"
+        End While
+        CN.Close()
 
     End Sub
 
@@ -192,12 +207,17 @@ Public Class Faturas
         HideButtons()
         ListBox1.Enabled = False
     End Sub
-
+    Public Sub New(ByVal sql As SqlConnection)
+        InitializeComponent()
+        CN = sql
+        CMD = New SqlCommand
+        CMD.Connection = CN
+    End Sub
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         '' Change this line...
         ''CN = New SqlConnection("data source=127.0.0.1:888;integrated security=true;initial catalog=Northwind")
-        CN = New SqlConnection("Data Source = 127.0.0.1,888 ;Initial Catalog = GestTrackDB; uid = SA; password = sqlBD_2021")
+        ''CN = New SqlConnection("Data Source = 127.0.0.1,888 ;Initial Catalog = GestTrackDB; uid = SA; password = sqlBD_2021")
 
         CMD = New SqlCommand
         CMD.Connection = CN
@@ -249,6 +269,10 @@ Public Class Faturas
         Label2.Visible = True
         Label4.Visible = True
         Label9.Visible = True
+        Label5.Visible = True
+        Label3.Visible = True
+        txtValor.Visible = True
+        txtIva.Visible = True
 
         dropMovimento.Visible = True
         ListBox1.Visible = True
@@ -270,6 +294,10 @@ Public Class Faturas
         Label2.Visible = False
         Label4.Visible = False
         Label9.Visible = False
+        Label5.Visible = False
+        Label3.Visible = False
+        txtValor.Visible = False
+        txtIva.Visible = False
         dropMovimento.Visible = False
         ListBox1.Visible = False
         txtID.Visible = False
@@ -318,7 +346,7 @@ Public Class Faturas
 
 
     Private Sub UpdateContact(ByVal C As Faturas_obj)
-        CMD.CommandText = "UPDATE GestTrack.Orcamento " &
+        CMD.CommandText = "UPDATE GestTrack.Fatura " &
             "SET Nome = @Nome, " &
             "    Descricao = @Descricao, " &
             "    [Data] = @Data, " &
@@ -341,7 +369,7 @@ Public Class Faturas
     End Sub
 
     Private Sub RemoveContact(ByVal ContactID As Integer)
-        CMD.CommandText = "DELETE GestTrack.Orcamento WHERE Codigo=@contactID "
+        CMD.CommandText = "DELETE GestTrack.Fatura WHERE Codigo=@contactID "
         CMD.Parameters.Clear()
         CMD.Parameters.AddWithValue("@contactID", ContactID)
         CN.Open()
